@@ -204,6 +204,12 @@
   },
   "active": "43cfbe1d6571af65",
   "lastOpenFiles": [
+    "skills/wechat_bot/test_service.py",
+    "skills/wechat_bot/README.md",
+    "skills/wechat_bot/start_server.bat",
+    "skills/wechat_bot/config.json",
+    "skills/wechat_bot/webhook_server.py",
+    "skills/wechat_bot",
     "今日热点速览.md",
     "AI热点看板.md",
     "personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md",
@@ -220,10 +226,6 @@
     "skills/douyin-to-obsidian/douyin_temp",
     "skills/douyin-to-obsidian/__pycache__/config.cpython-310.pyc",
     "skills/douyin-to-obsidian/__pycache__",
-    "skills/douyin-to-obsidian/config.py",
-    "skills/douyin-to-obsidian/config.example.py",
-    "skills/douyin-to-obsidian/text_corrections.json",
-    "skills/douyin-to-obsidian/douyin_downloader.py",
     "ai-hotspots/hotspots/抖音-公司要求学AI考证书指南-宁说宁话.md"
   ]
 }
