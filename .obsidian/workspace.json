@@ -204,6 +204,7 @@
   },
   "active": "43cfbe1d6571af65",
   "lastOpenFiles": [
+    "skills/douyin-to-obsidian/run_whisper.py",
     "skills/douyin-to-obsidian/run_whisper_manual.py",
     "skills/douyin-to-obsidian/temp/7623675448022617386.mp3",
     "skills/douyin-to-obsidian/temp/7623675448022617386.mp4",
@@ -215,7 +216,6 @@
     "skills/douyin-to-obsidian/__pycache__/douyin_downloader.cpython-37.pyc",
     "skills/wechat_bot/test_service.py",
     "skills/wechat_bot/README.md",
-    "skills/wechat_bot/start_server.bat",
     "今日热点速览.md",
     "AI热点看板.md",
     "personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md",
