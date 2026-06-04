@@ -204,13 +204,18 @@
   },
   "active": "43cfbe1d6571af65",
   "lastOpenFiles": [
+    "skills/douyin-to-obsidian/run_whisper_manual.py",
+    "skills/douyin-to-obsidian/temp/7623675448022617386.mp3",
+    "skills/douyin-to-obsidian/temp/7623675448022617386.mp4",
+    "skills/douyin-to-obsidian/__pycache__/douyin_downloader.cpython-314.pyc",
+    "skills/douyin-to-obsidian/temp",
+    "content/douyin",
+    "content",
+    "skills/douyin-to-obsidian/__pycache__/config.cpython-314.pyc",
     "skills/douyin-to-obsidian/__pycache__/douyin_downloader.cpython-37.pyc",
     "skills/wechat_bot/test_service.py",
     "skills/wechat_bot/README.md",
     "skills/wechat_bot/start_server.bat",
-    "skills/wechat_bot/config.json",
-    "skills/wechat_bot/webhook_server.py",
-    "skills/wechat_bot",
     "今日热点速览.md",
     "AI热点看板.md",
     "personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md",
@@ -221,11 +226,6 @@
     "ai-hotspots/hotspots/AI热点-2026-06-04.md",
     "模板/热点模板.md",
     "2026-06-03-7637880891511528896.md",
-    "skills/douyin-to-obsidian/douyin_temp/7637880891511528896.mp3",
-    "skills/douyin-to-obsidian/douyin_temp/7637880891511528896.mp4",
-    "skills/douyin-to-obsidian/__pycache__/douyin_downloader.cpython-310.pyc",
-    "skills/douyin-to-obsidian/douyin_temp",
-    "skills/douyin-to-obsidian/__pycache__/config.cpython-310.pyc",
     "ai-hotspots/hotspots/抖音-公司要求学AI考证书指南-宁说宁话.md"
   ]
 }
