@@ -91,6 +91,32 @@ MyKnowledge_base/
 
 ## AI 工作流规则
 
+### 0. 抖音视频处理 SOP (Standard Operating Procedure)
+
+> **详细步骤参见 `WORKFLOW.md` 流程一**。
+> **新人入职前必读 `AGENT_ONBOARDING.md`**。
+
+**触发条件**：
+- 用户发送 `v.douyin.com` 或 `douyin.com` 链接。
+- 用户说“提取抖音”、“合入个人知识库”。
+
+**强制规则**：
+1. **必须使用 `douyin-to-obsidian` Skill**
+   - 路径：`D:\my_knowledgebase\skills\douyin-to-obsidian\`
+   - 脚本：`douyin_downloader.py`
+2. **必须应用错字修正**
+   - 加载 `D:\my_knowledgebase\skills\douyin-to-obsidian\text_corrections.json`
+   - 对 Whisper 转录结果执行自动替换。
+3. **必须人工校验**
+   - 展示修正后内容给用户，等待确认。
+4. **必须检测重名冲突**
+   - 若 `personal/notes/` 下存在同名文件，提示用户并展示旧内容。
+   - 用户决定覆盖则替换，否则终止。
+
+**详细操作步骤**：见 `WORKFLOW.md` "流程一"。
+
+---
+
 ### 1. 个人内容录入（Personal Ingest）
 
 **触发**：用户投喂内容（文本、链接、视频链接）
@@ -102,7 +128,9 @@ MyKnowledge_base/
 4. 提取关键概念，更新 `concepts/` 中相关页面
 5. 更新 `index.md`（个人知识库段落）和 `log.md`
 
-**注意**：抖音视频链接需先用工具提取字幕/内容，再录入。
+**注意**：
+- 抖音视频链接 **必须** 按 "0. 抖音视频处理 SOP" 执行。
+- 其他视频链接（B站等）可参考抖音 SOP 流程。
 
 ---
 
@@ -237,7 +265,7 @@ YYYY-MM-DD
 
 ## Obsidian 配置建议
 
-1. **Vault 路径**: `d:/MyKnowledge_base/`
+1. **Vault 路径**: `D:\my_knowledgebase`
 2. **启用核心插件**: 图谱视图、标签视图、大纲视图
 3. **推荐社区插件**:
    - **Dataview**: 动态查询（如"列出本周所有 AI 热点"）
