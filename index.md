@@ -19,6 +19,7 @@
 ### 笔记（notes/）
 | ID | 标题 | 标签 | 状态 |
 |----|------|------|------|
+| [抖音-LLM Wiki 和 GBrain 真正的差别](personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md) | LLM Wiki 和 GBrain 真正的差别，不是谁检索更强 | #AI知识库 #LLM #Wiki #GBrain #Agent | ✅ 已导入 |
 | [抖音-公司要求学AI考证书指南](personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md) | 公司要求学AI，考哪个AI证书？ | #AI证书 #职场人学AI #简历加分 | ✅ 已导入 |
 
 ### 博文草稿（drafts/）
@@ -89,7 +90,7 @@
 
 | 类别 | 条目数 |
 |------|--------|
-| 个人笔记 | 1 |
+| 个人笔记 | 2 |
 | 博文草稿 | 0 |
 | 选题想法 | 0 |
 | AI 热点 | 1 |

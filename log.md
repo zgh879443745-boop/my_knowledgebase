@@ -32,3 +32,18 @@
 - `config.json` 添加 `ai.languages: ["zh"]`，下次采集将生成中文摘要
 - `config.json` 关闭 `webhook`（未配置 URL）
 - `config.json` 关闭 GitHub 源（避免 403）
+
+---
+
+## [2026-06-05] ingest | 抖音视频提取成功
+- **视频链接**: https://v.douyin.com/pY-mrw5qcPM/
+- **视频标题**: LLM Wiki 和 GBrain 真正的差别，不是谁检索更强
+- **视频作者**: Frank的Agent实验室
+- **视频ID**: 7631507265627112042
+- **转录字数**: 1213 字
+- **保存路径**: `personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md`
+- **使用工具**: `douyin-to-obsidian` Skill (路径: `D:\my_knowledgebase\tools\douyin-to-obsidian\`)
+- **错字修正**: 应用 `text_corrections.json` 规则，修正了"卫网页"→"喂网页"、"编异"→"编译"、"减锁"→"检索"等错误
+- **索引更新**: ✅ 已更新 `index.md` 个人知识库段落
+- **统计更新**: ✅ 个人笔记数 1 → 2
+- **核心观点**: LLM Wiki 偏知识表达层（知识编译），GBrain 偏知识运行层（知识系统持续运行）

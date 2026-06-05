@@ -102,10 +102,10 @@ MyKnowledge_base/
 
 **强制规则**：
 1. **必须使用 `douyin-to-obsidian` Skill**
-   - 路径：`D:\my_knowledgebase\skills\douyin-to-obsidian\`
-   - 脚本：`douyin_downloader.py`
+   - 路径：`D:\my_knowledgebase\tools\douyin-to-obsidian\`
+   - 脚本：`douyin_to_obsidian.py`
 2. **必须应用错字修正**
-   - 加载 `D:\my_knowledgebase\skills\douyin-to-obsidian\text_corrections.json`
+   - 加载 `D:\my_knowledgebase\tools\douyin-to-obsidian\text_corrections.json`
    - 对 Whisper 转录结果执行自动替换。
 3. **必须人工校验**
    - 展示修正后内容给用户，等待确认。

@@ -1,0 +1,60 @@
+# ==================== Obsidian 本地配置 ====================
+# 忽略 Obsidian 工作区配置（每个设备可能不同）
+.obsidian/workspace*
+.obsidian/cache
+.obsidian/*.json.bak
+
+# 保留核心配置文件（多设备共享）
+!.obsidian/app.json
+!.obsidian/appearance.json
+!.obsidian/core-plugins*.json
+!.obsidian/themes/
+!.obsidian/icons/
+
+# 忽略插件内部缓存（保留插件启用配置）
+.obsidian/plugins/*/data.json
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/manifest.json
+.obsidian/plugins/*/styles.css
+
+# 保留 TikToker、Web Clipper 等插件的配置文件（如果需要同步配置）
+!.obsidian/plugins/TikToker/
+!.obsidian/plugins/web-clipper/
+!.obsidian/plugins/obsidian-git/
+
+# ==================== 临时文件与大文件 ====================
+# 忽略下载的临时视频/音频文件
+*.mp4
+*.tmp
+*.temp
+*.part
+*.crdownload
+
+# 忽略 Whisper 模型文件（体积大，不需要版本控制）
+*.pt
+*.bin
+
+# 忽略日志文件（保留 log.md 知识库操作日志）
+*.log
+!.gitignore
+
+# ==================== 系统文件 ====================
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+System Volume Information/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# ==================== IDE 文件 ====================
+.vscode/
+.idea/
+*.swp
+*.swo

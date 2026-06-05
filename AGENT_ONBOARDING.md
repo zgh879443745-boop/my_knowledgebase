@@ -24,7 +24,7 @@
 
 ### 2. 路径配置
 - [ ] **知识库根目录**：`D:\my_knowledgebase`
-- [ ] **Skill 目录**：`D:\my_knowledgebase\skills\douyin-to-obsidian\`
+- [ ] **Skill 目录**：`D:\my_knowledgebase\tools\douyin-to-obsidian\`
 - [ ] **输出目录**：
   - 个人库：`D:\my_knowledgebase\personal\notes\`
   - 热点库：`D:\my_knowledgebase\ai-hotspots\hotspots\`
