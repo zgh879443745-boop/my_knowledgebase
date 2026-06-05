@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI热点看板.md",
+                "file": "personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI热点看板"
+              "title": "抖音-公司要求学AI考证书指南-宁说宁话"
             }
           }
         ]
@@ -178,11 +178,12 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -202,23 +203,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "43cfbe1d6571af65",
+  "active": "6c57062620f3289f",
   "lastOpenFiles": [
+    "personal/notes/douyin/2026-06-05-7623675448022617386.md",
+    "personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md",
+    "skills/douyin-to-obsidian/temp/video_info_cache.json",
+    "personal/notes/douyin",
+    "raw_sources/douyin/2026-04-01-7623675448022617386.md",
+    "AI热点看板.md",
+    "skills/douyin-to-obsidian/save_note.py",
+    "skills/douyin-to-obsidian/temp/ffmpeg.exe",
+    "raw_sources/douyin",
     "skills/douyin-to-obsidian/run_whisper.py",
     "skills/douyin-to-obsidian/run_whisper_manual.py",
     "skills/douyin-to-obsidian/temp/7623675448022617386.mp3",
     "skills/douyin-to-obsidian/temp/7623675448022617386.mp4",
     "skills/douyin-to-obsidian/__pycache__/douyin_downloader.cpython-314.pyc",
-    "skills/douyin-to-obsidian/temp",
-    "content/douyin",
-    "content",
-    "skills/douyin-to-obsidian/__pycache__/config.cpython-314.pyc",
-    "skills/douyin-to-obsidian/__pycache__/douyin_downloader.cpython-37.pyc",
-    "skills/wechat_bot/test_service.py",
     "skills/wechat_bot/README.md",
     "今日热点速览.md",
-    "AI热点看板.md",
-    "personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md",
     "log.md",
     "SCHEMA.md",
     "index.md",
