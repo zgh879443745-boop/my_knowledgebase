@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SCHEMA.md",
+                "file": "AGENT_ONBOARDING.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SCHEMA"
+              "title": "AGENT_ONBOARDING"
             }
           }
         ]
@@ -154,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SCHEMA.md",
+                "file": "AGENT_ONBOARDING.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "SCHEMA 的大纲"
+              "title": "AGENT_ONBOARDING 的大纲"
             }
           },
           {
@@ -205,9 +205,12 @@
   },
   "active": "1ccd2965ed85a664",
   "lastOpenFiles": [
+    "AGENTS.md",
+    "AGENT_ONBOARDING.md",
+    "AI热点看板.md",
+    "SCHEMA.md",
     "personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md",
     "personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md",
-    "AGENTS.md",
     "personal/notes/codex_notes",
     "personal/notes/抖音-让Codex干活飞起-小韦用AI.md",
     "2026-06-09-7646303972000681267.md",
@@ -215,10 +218,8 @@
     "tools/douyin-to-obsidian/temp/7646303972000681267.mp4",
     "personal/notes/codex_note/抖音-让Codex干活飞起-小韦用AI.md",
     "personal/notes/codex_note",
-    "AGENT_ONBOARDING.md",
     "今日热点速览.md",
     "未命名.base",
-    "AI热点看板.md",
     "2026-06-05-7631507265627112042.md",
     "tools/douyin-to-obsidian/temp/7631507265627112042.mp3",
     "tools/douyin-to-obsidian/temp/7631507265627112042.mp4",
@@ -232,7 +233,6 @@
     "raw_sources/douyin/2026-04-01-7623675448022617386.md",
     "skills/wechat_bot/README.md",
     "log.md",
-    "SCHEMA.md",
     "index.md",
     "ai-hotspots/hotspots/AI热点-2026-06-03.md",
     "ai-hotspots/hotspots/AI热点-2026-06-04.md",

@@ -45,7 +45,7 @@ MyKnowledge_base/
 
 | 类型 | 格式 | 示例 |
 |------|------|------|
-| 个人笔记 | `PN-{序号}-{简短描述}.md` | `PN-001-rag-vs-fine-tune.md` |
+| 抖音笔记 | `抖音-{全标题}-{作者}.md` | `抖音-让Codex干活飞起-小韦用AI.md` |
 | 博文草稿 | `PD-{序号}-{标题}.md` | `PD-001-2026-ai-trend.md` |
 | 选题想法 | `PI-{序号}-{标题}.md` | `PI-001-agent-framework-review.md` |
 | AI 热点 | `AH-{YYYYMMDD}-{简短描述}.md` | `AH-20260603-gpt5-release.md` |
@@ -56,6 +56,17 @@ MyKnowledge_base/
 
 ---
 
+
+## 🎬 抖音视频路由规则
+
+> 抖音视频通过 `douyin_to_obsidian.py` 提取后，按以下规则选择目标库：
+
+| 用户表述 | 目标库 | 存放路径 |
+|---------|--------|---------|
+| "上传到**AI热点**" / "合入**ai-hotspots**" | `ai-hotspots/` | `ai-hotspots/hotspots/` |
+| **未指定**目标库 / "合入**个人知识库**" | `personal/` | `personal/notes/`（有子文件夹要求则创建子文件夹） |
+
+> ⚠️ 不可自行判断抖音内容属于哪个库，必须以上述规则为准。
 ## ⚡ 用户语义 → 目标库 映射规则（所有 Agent 必须首先阅读本节）
 
 > **本规则适用于任何接入本知识库的 AI Agent 工具。**
