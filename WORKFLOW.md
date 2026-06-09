@@ -23,7 +23,7 @@
 - **Skill 调用**：**必须**指定使用 `douyin-to-obsidian` (路径：`D:\my_knowledgebase\tools\douyin-to-obsidian\`)。**禁止使用其他工具或手动下载。**
 
 #### 2. 内容提取与修正
-- **执行 Skill**：运行 `D:\my_knowledgebase\tools\douyin-to-obsidian\douyin_to_obsidian.py`。
+- **执行 Skill**：运行 `py -3.10 D:\my_knowledgebase\tools\douyin-to-obsidian\douyin_to_obsidian.py --link "链接" --target personal`（AI热点则用 `--target aihot`）。
 - **加载修正规则**：读取 `D:\my_knowledgebase\tools\douyin-to-obsidian\text_corrections.json`。
 - **自动替换**：对 Whisper 转录结果应用 JSON 中的映射规则（如"人设部"->"人社部"）。
 - **人工校验**：将修正后的文本展示给用户，询问："错字修正结果是否正确？是否需要补充？"

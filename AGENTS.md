@@ -49,7 +49,7 @@ ffmpeg -version
 ### A3. 执行提取
 
 ```powershell
-py -3.10 D:\my_knowledgebase\tools\douyin-to-obsidian\douyin_to_obsidian.py --link "链接"
+py -3.10 D:\my_knowledgebase\tools\douyin-to-obsidian\douyin_to_obsidian.py --link "链接" --target personal  # 或 --target aihot
 ```
 
 ### A4. 错字修正 → 用户确认
