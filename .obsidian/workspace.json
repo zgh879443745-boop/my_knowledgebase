@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AGENTS.md",
+                "file": "SCHEMA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AGENTS"
+              "title": "SCHEMA"
             }
           }
         ]
@@ -154,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AGENTS.md",
+                "file": "SCHEMA.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "AGENTS 的大纲"
+              "title": "SCHEMA 的大纲"
             }
           },
           {
@@ -203,18 +203,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0f1904e89c8c1951",
+  "active": "1ccd2965ed85a664",
   "lastOpenFiles": [
+    "personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md",
+    "personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md",
+    "AGENTS.md",
     "personal/notes/codex_notes",
     "personal/notes/抖音-让Codex干活飞起-小韦用AI.md",
     "2026-06-09-7646303972000681267.md",
     "tools/douyin-to-obsidian/temp/7646303972000681267.mp3",
     "tools/douyin-to-obsidian/temp/7646303972000681267.mp4",
     "personal/notes/codex_note/抖音-让Codex干活飞起-小韦用AI.md",
-    "AGENTS.md",
     "personal/notes/codex_note",
-    "personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md",
-    "personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md",
     "AGENT_ONBOARDING.md",
     "今日热点速览.md",
     "未命名.base",
@@ -225,7 +225,6 @@
     "tools/douyin-to-obsidian/__pycache__/douyin_downloader.cpython-310.pyc",
     "tools/douyin-to-obsidian/temp",
     "tools/douyin-to-obsidian/__pycache__/config.cpython-310.pyc",
-    "tools/douyin-to-obsidian/__pycache__",
     "tools/douyin-to-obsidian/SKILL.md",
     "tools/douyin-to-obsidian/README.md",
     "WORKFLOW.md",
