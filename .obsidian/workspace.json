@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e56836d8ddfae50d",
+        "id": "b2b3722b8d79c2ac",
         "type": "tabs",
         "children": [
           {
-            "id": "1ccd2965ed85a664",
+            "id": "f92eeb3143416dae",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md",
-                "mode": "source",
-                "source": false
+                "aFile": "tools/douyin-to-obsidian",
+                "bFile": "tools/douyin-to-obsidian",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室"
+              "icon": "diff",
+              "title": "Diff: douyin-to-obsidian  (Working Tree)"
             }
           }
         ]
@@ -154,13 +154,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -203,10 +202,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1ccd2965ed85a664",
+  "active": "f92eeb3143416dae",
   "lastOpenFiles": [
-    "personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md",
     "personal/notes/codex_notes/抖音-让Codex干活飞起-小韦用AI.md",
+    "personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md",
+    "personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md",
     "personal/notes/codex_notes",
     "personal/notes/codx_notes/抖音-让Codex干活飞起-小韦用AI.md",
     "personal/notes/codx_notes",
@@ -218,7 +218,6 @@
     "AGENT_ONBOARDING.md",
     "AI热点看板.md",
     "SCHEMA.md",
-    "personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md",
     "personal/notes/抖音-让Codex干活飞起-小韦用AI.md",
     "2026-06-09-7646303972000681267.md",
     "personal/notes/codex_note/抖音-让Codex干活飞起-小韦用AI.md",
