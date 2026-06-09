@@ -45,3 +45,11 @@
 - **AI摘要**: 五大插件（HyperFrame/Computer Use/Chrome/Slides/Coder）完整链路，覆盖动态页面→电脑操控→浏览器自动化→PPT生成→编程开发
 - **索引更新**: ✅ 已更新 `index.md` 个人知识库段落
 - **统计更新**: ✅ 个人笔记数 2 → 3
+
+## [2026-06-09] ingest | 抖音视频存入 codex_notes 子目录
+- **视频链接**: https://v.douyin.com/3Pa-U3-HhLM/
+- **视频标题**: 让Codex干活飞起 | Codex五大插件实测
+- **视频作者**: 小韦用AI
+- **保存路径**: `personal/notes/codex_notes/抖音-让Codex干活飞起-小韦用AI.md`
+- **修复**: codex_notes 从文件恢复为正确目录结构
+- **索引更新**: ✅ 已更新 `index.md`
