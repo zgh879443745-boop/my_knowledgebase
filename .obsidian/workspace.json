@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "39987c0ad0771d85",
+        "id": "e56836d8ddfae50d",
         "type": "tabs",
         "children": [
           {
-            "id": "b0df20233c7abc91",
+            "id": "1ccd2965ed85a664",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md",
+                "file": "AGENTS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室"
+              "title": "AGENTS"
             }
           }
         ]
@@ -154,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md",
+                "file": "AGENTS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室 的大纲"
+              "title": "AGENTS 的大纲"
             }
           },
           {
@@ -172,9 +172,19 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "0f1904e89c8c1951",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -189,16 +199,24 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "bases:新建数据库": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5e9bbbd2ca1bc8c0",
+  "active": "0f1904e89c8c1951",
   "lastOpenFiles": [
-    "personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md",
+    "personal/notes/codex_notes",
+    "personal/notes/抖音-让Codex干活飞起-小韦用AI.md",
+    "2026-06-09-7646303972000681267.md",
+    "tools/douyin-to-obsidian/temp/7646303972000681267.mp3",
+    "tools/douyin-to-obsidian/temp/7646303972000681267.mp4",
+    "personal/notes/codex_note/抖音-让Codex干活飞起-小韦用AI.md",
+    "AGENTS.md",
+    "personal/notes/codex_note",
     "personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md",
+    "personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md",
     "AGENT_ONBOARDING.md",
     "今日热点速览.md",
-    "personal/notes/codex_note/抖音-让Codex干活飞起-小韦用AI.md",
     "未命名.base",
     "AI热点看板.md",
     "2026-06-05-7631507265627112042.md",
@@ -208,11 +226,8 @@
     "tools/douyin-to-obsidian/temp",
     "tools/douyin-to-obsidian/__pycache__/config.cpython-310.pyc",
     "tools/douyin-to-obsidian/__pycache__",
-    "tools/douyin-to-obsidian/config.py",
-    "tools/douyin-to-obsidian/text_corrections.json",
     "tools/douyin-to-obsidian/SKILL.md",
     "tools/douyin-to-obsidian/README.md",
-    "tools/douyin-to-obsidian/douyin_to_obsidian.py",
     "WORKFLOW.md",
     "personal/notes/douyin/2026-06-05-7623675448022617386.md",
     "raw_sources/douyin/2026-04-01-7623675448022617386.md",

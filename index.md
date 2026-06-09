@@ -1,7 +1,7 @@
 # AI 博主知识库 — 总索引
 
 > 基于 Karpathy/llm-wiki.md 模式，由 AI Agent 自动维护。
-> 最后更新: 2026-06-03
+> 最后更新: 2026-06-09
 
 ---
 
@@ -21,6 +21,7 @@
 |----|------|------|------|
 | [抖音-LLM Wiki 和 GBrain 真正的差别](personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md) | LLM Wiki 和 GBrain 真正的差别，不是谁检索更强 | #AI知识库 #LLM #Wiki #GBrain #Agent | ✅ 已导入 |
 | [抖音-公司要求学AI考证书指南](personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md) | 公司要求学AI，考哪个AI证书？ | #AI证书 #职场人学AI #简历加分 | ✅ 已导入 |
+| [抖音-让Codex干活飞起](personal/notes/codex_notes/抖音-让Codex干活飞起-小韦用AI.md) | Codex五大插件实测：HyperFrame/Computer Use/Chrome/Slides/Coder | #Codex #AI插件 #提效神器 | ✅ 已导入 |
 
 ### 博文草稿（drafts/）
 | ID | 标题 | 标签 | 状态 |
@@ -91,7 +92,7 @@
 
 | 类别 | 条目数 |
 |------|--------|
-| 个人笔记 | 2 |
+| 个人笔记 | 3 |
 | 博文草稿 | 0 |
 | 选题想法 | 0 |
 | AI 热点 | 1 |

@@ -34,16 +34,14 @@
 - `config.json` 关闭 GitHub 源（避免 403）
 
 ---
-
-## [2026-06-05] ingest | 抖音视频提取成功
-- **视频链接**: https://v.douyin.com/pY-mrw5qcPM/
-- **视频标题**: LLM Wiki 和 GBrain 真正的差别，不是谁检索更强
-- **视频作者**: Frank的Agent实验室
-- **视频ID**: 7631507265627112042
-- **转录字数**: 1213 字
-- **保存路径**: `personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md`
-- **使用工具**: `douyin-to-obsidian` Skill (路径: `D:\my_knowledgebase\tools\douyin-to-obsidian\`)
-- **错字修正**: 应用 `text_corrections.json` 规则，修正了"卫网页"→"喂网页"、"编异"→"编译"、"减锁"→"检索"等错误
+## [2026-06-09] ingest | 抖音视频提取成功
+- **视频链接**: https://v.douyin.com/3Pa-U3-HhLM/
+- **视频标题**: 让Codex干活飞起 | Codex五大插件实测
+- **视频作者**: 小韦用AI
+- **视频ID**: 7646303972000681267
+- **转录字数**: 1080 字
+- **保存路径**: `personal/notes/codex_notes/抖音-让Codex干活飞起-小韦用AI.md`
+- **使用工具**: `douyin-to-obsidian` Skill
+- **AI摘要**: 五大插件（HyperFrame/Computer Use/Chrome/Slides/Coder）完整链路，覆盖动态页面→电脑操控→浏览器自动化→PPT生成→编程开发
 - **索引更新**: ✅ 已更新 `index.md` 个人知识库段落
-- **统计更新**: ✅ 个人笔记数 1 → 2
-- **核心观点**: LLM Wiki 偏知识表达层（知识编译），GBrain 偏知识运行层（知识系统持续运行）
+- **统计更新**: ✅ 个人笔记数 2 → 3
