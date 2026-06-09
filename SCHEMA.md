@@ -98,7 +98,7 @@ MyKnowledge_base/
 
 **触发条件**：
 - 用户发送 `v.douyin.com` 或 `douyin.com` 链接。
-- 用户说“提取抖音”、“合入个人知识库”。
+- 用户说"提取抖音"、"合入个人知识库"。
 
 **强制规则**：
 1. **必须使用 `douyin-to-obsidian` Skill**

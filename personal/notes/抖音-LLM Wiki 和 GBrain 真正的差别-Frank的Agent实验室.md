@@ -6,7 +6,7 @@ date: 2026-06-05
 author: Frank的Agent实验室
 ---
 
-# LLM Wiki 和 GBrain 真正的差别
+# LLM Wiki 和 GBrain 真正的差别2
 
 ## 原始内容
 
