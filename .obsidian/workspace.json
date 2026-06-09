@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md",
+                "file": "personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "抖音-公司要求学AI考证书指南-宁说宁话"
+              "title": "抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室"
             }
           }
         ]
@@ -154,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md",
+                "file": "personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "抖音-公司要求学AI考证书指南-宁说宁话 的大纲"
+              "title": "抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室 的大纲"
             }
           },
           {
@@ -203,8 +203,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6c57062620f3289f",
+  "active": "1ccd2965ed85a664",
   "lastOpenFiles": [
+    "personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md",
     "personal/notes/codex_notes/抖音-让Codex干活飞起-小韦用AI.md",
     "personal/notes/codex_notes",
     "personal/notes/codx_notes/抖音-让Codex干活飞起-小韦用AI.md",
@@ -217,7 +218,6 @@
     "AGENT_ONBOARDING.md",
     "AI热点看板.md",
     "SCHEMA.md",
-    "personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md",
     "personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md",
     "personal/notes/抖音-让Codex干活飞起-小韦用AI.md",
     "2026-06-09-7646303972000681267.md",
