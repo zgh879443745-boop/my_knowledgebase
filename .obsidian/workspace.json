@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b2b3722b8d79c2ac",
+        "id": "f301a4e8201b210d",
         "type": "tabs",
         "children": [
           {
-            "id": "f92eeb3143416dae",
+            "id": "88d0ed7e49cc84c7",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "tools/douyin-to-obsidian",
-                "bFile": "tools/douyin-to-obsidian",
-                "aRef": ""
+                "file": "AI热点看板.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: douyin-to-obsidian  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "AI热点看板"
             }
           }
         ]
@@ -202,8 +202,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f92eeb3143416dae",
+  "active": "88d0ed7e49cc84c7",
   "lastOpenFiles": [
+    "今日热点速览.md",
+    "AGENTS.md",
+    "ai-hotspots/hotspots/AI热点-2026-06-16.md",
+    "AI热点看板.md",
     "ai-hotspots/hotspots/AI热点-2026-06-10.md",
     "personal/notes/codex_notes/抖音-让Codex干活飞起-小韦用AI.md",
     "personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md",
@@ -214,16 +218,13 @@
     "personal/notes/抖音-让Codex干活飞起 #codex #AI应用 #提效神器-未知作者.md",
     "tools/douyin-to-obsidian/temp/7646303972000681267.mp3",
     "tools/douyin-to-obsidian/temp/7646303972000681267.mp4",
-    "AGENTS.md",
     "README.md",
     "AGENT_ONBOARDING.md",
-    "AI热点看板.md",
     "SCHEMA.md",
     "personal/notes/抖音-让Codex干活飞起-小韦用AI.md",
     "2026-06-09-7646303972000681267.md",
     "personal/notes/codex_note/抖音-让Codex干活飞起-小韦用AI.md",
     "personal/notes/codex_note",
-    "今日热点速览.md",
     "未命名.base",
     "2026-06-05-7631507265627112042.md",
     "tools/douyin-to-obsidian/temp/7631507265627112042.mp3",
@@ -238,7 +239,6 @@
     "skills/wechat_bot/README.md",
     "log.md",
     "index.md",
-    "ai-hotspots/hotspots/AI热点-2026-06-03.md",
-    "ai-hotspots/hotspots/AI热点-2026-06-04.md"
+    "ai-hotspots/hotspots/AI热点-2026-06-03.md"
   ]
 }
