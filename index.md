@@ -41,6 +41,7 @@
 👉 [今日热点速览](今日热点速览.md) — 最近一次采集的热点中文标题
 
 ### 近期热点（hotspots/）
+- [2026-07-22 AI热点](ai-hotspots/hotspots/AI热点-2026-07-22.md)
 - [2026-07-20 AI热点](ai-hotspots/hotspots/AI热点-2026-07-20.md)
 - [2026-07-19 AI热点](ai-hotspots/hotspots/AI热点-2026-07-19.md)
 - [2026-07-10 AI热点](ai-hotspots/hotspots/AI热点-2026-07-10.md)
