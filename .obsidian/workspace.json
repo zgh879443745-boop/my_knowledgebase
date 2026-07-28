@@ -11,10 +11,14 @@
             "id": "88d0ed7e49cc84c7",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
         ]
@@ -198,8 +202,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0f1904e89c8c1951",
+  "active": "88d0ed7e49cc84c7",
   "lastOpenFiles": [
+    "tools/douyin-favorites-to-knowledge/skill/SKILL.md",
+    "7568365600645385515.md",
+    "7484525645540707594.md",
     "personal/notes/douyin-ai-favorites.md",
     "personal/notes/douyin-ai-favorites-links.json",
     "personal/notes/douyin-ai-favorites.md.bak",
@@ -233,8 +240,6 @@
     "7658946921398029619.md",
     "7658567098902280369.md",
     "7658223942092811001.md",
-    "7658147942138541797.md",
-    "7657870982782160174.md",
     "tools/douyin_page.png"
   ]
 }
