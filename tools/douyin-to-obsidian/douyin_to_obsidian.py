@@ -161,6 +161,10 @@ with open(r"{Path(TEMP_PATH) / 'whisper_result.json'}", 'w', encoding='utf-8') a
 def save_to_obsidian(video_id, title, transcript, video_url, target="personal"):
     date_str = datetime.now().strftime("%Y-%m-%d")
     safe_title = re.sub(r'[\\/:*?"<>|]', '_', title)
+    safe_title = safe_title.replace('\n', ' ').replace('\r', ' ').replace('#', '')
+    safe_title = re.sub(r'\s+', ' ', safe_title).strip()
+    if len(safe_title) > 80:
+        safe_title = safe_title[:77] + '...' 
     
     if target == "aihot":
         target_dir = OBSIDIAN_PATH / "ai-hotspots" / "hotspots"

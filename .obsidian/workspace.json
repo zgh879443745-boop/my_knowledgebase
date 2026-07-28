@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "f301a4e8201b210d",
+        "id": "b4001dc542eff20c",
         "type": "tabs",
         "children": [
           {
-            "id": "88d0ed7e49cc84c7",
+            "id": "3dd9a7e0811a48b9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "tools/douyin-to-obsidian/README.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "README"
+              "title": "新标签页"
             }
           }
         ]
@@ -204,26 +200,31 @@
   },
   "active": "6c57062620f3289f",
   "lastOpenFiles": [
-    "personal/notes/obsidian",
-    "tools/douyin-to-obsidian/SKILL.md",
-    "tools/douyin-to-obsidian/README.md",
-    "personal/notes/codex_notes/抖音-让Codex干活飞起-小韦用AI.md",
-    "tools/get-ai-video-link/__pycache__/browser_login.cpython-310.pyc",
-    "tools/get-ai-video-link/__pycache__/config.cpython-310.pyc",
-    "tools/get-ai-video-link/__pycache__",
-    "tools/get-ai-video-link/SKILL.md",
-    "tools/get-ai-video-link/README.md",
-    "tools/get-ai-video-link/requirements.txt",
-    "tools/get-ai-video-link/collect_ai_links.py",
-    "tools/get-ai-video-link/config.py",
-    "tools/get-ai-video-link/config.example.py",
-    "tools/get-ai-video-link/browser_login.py",
-    "tools/get-ai-video-link",
+    "tools/get-ai-video-link/__pycache__/collect_ai_links.cpython-310.pyc",
+    "temp_fix2.py",
+    "temp_fix.py",
+    "personal/notes/抖音-Agent 接 SaaS 别直接塞密钥 Agent 想进邮箱、文档、数据表和代码仓库，真正危险的是凭证边界。OpenConnector 官方描述是开源认证...-未知作者.md",
+    "personal/notes/抖音-firecrawl免API调用 让数据获取轻而易举 🔍API调用还在卡壳？现在firecrawl直接免Api直接调用，把数据喂到嘴边🚀零代码抓取，新手也能...-未知作者.md",
+    "personal/notes/抖音-一个Skill让Agent自动操作浏览器，告别重复枯燥任务 #AI #科技 #计算机 #编程 #Agent-未知作者.md",
     "personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md",
+    "personal/notes/抖音-AI不是变笨了，是你装的工具太吵 AI Agent Skills 怎么管理？当工具说明、触发条件和插件越来越多，AI 可能更容易选错，而不是变得更聪明。 #AI工具 #AIAgent #codex #Skills #Github-未知作者.md",
     "personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md",
+    "tools/douyin-to-obsidian/README.md",
+    "tools/douyin-to-obsidian/temp/7664150164537363738.mp3",
+    "tools/douyin-to-obsidian/temp/7664150164537363738.mp4",
+    "tools/douyin-to-obsidian/temp/7659951029026377002.mp3",
+    "tools/douyin-to-obsidian/temp/7659951029026377002.mp4",
+    "personal/notes/抖音-Pi Agent：比 Codex 更适合普通人的AI工具 #PiAgent#AI新星计划#抖音前沿科技首发计划#vibecoding大赏 #ClaudeCode-未知作者.md",
+    "tools/douyin-to-obsidian/temp/7643805974544780580.mp3",
+    "tools/douyin-to-obsidian/temp/7643805974544780580.mp4",
+    "tools/douyin-to-obsidian/temp/7658567098902280369.mp3",
+    "tools/douyin-to-obsidian/temp/7658567098902280369.mp4",
+    "tools/get-ai-video-link/README.md",
+    "tools/get-ai-video-link/SKILL.md",
+    "tools/douyin-to-obsidian/SKILL.md",
+    "personal/notes/codex_notes/抖音-让Codex干活飞起-小韦用AI.md",
     "personal/notes/douyin-ai-favorites.md",
     "tools/douyin-favorites-to-knowledge/README.md",
-    "temp_note.py",
     "personal/notes/get-ai-video-link-skill.md",
     "tools/douyin_page.png",
     "tools/douyin-favorites-to-knowledge/skill/SKILL.md",
@@ -235,11 +236,6 @@
     "7665634161000009014.md",
     "7665578534845792154.md",
     "7665576877431606547.md",
-    "7665243075370945811.md",
-    "7664904478776991872.md",
-    "7664187132163984676.md",
-    "7664164847550560229.md",
-    "7664150164537363738.md",
-    "7663718133945881957.md"
+    "7665243075370945811.md"
   ]
 }

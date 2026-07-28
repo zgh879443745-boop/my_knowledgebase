@@ -1,13 +1,15 @@
-# AI 博主知识库 — 总索引
+﻿# AI 博主知识库 — 总索引
 
 > 基于 Karpathy/llm-wiki.md 模式，由 AI Agent 自动维护。
-> 最后更新: 2026-06-09
+> 最后更新: 2026-07-28
 
 ---
 
 ## 📖 使用指南
 
 - **个人内容**: 见下方「个人知识库」段落
+- **Codex 笔记**: 见下方「Codex 笔记」段落
+- **Obsidian 笔记**: 见下方「Obsidian 笔记」段落
 - **AI 热点**: 见下方「AI 行业热点库」段落
 - **时间线查询**: 见 `timeline/` 目录
 - **冲突报告**: 见 `lint_reports/` 目录
@@ -21,7 +23,25 @@
 |----|------|------|------|
 | [抖音-LLM Wiki 和 GBrain 真正的差别](personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md) | LLM Wiki 和 GBrain 真正的差别，不是谁检索更强 | #AI知识库 #LLM #Wiki #GBrain #Agent | ✅ 已导入 |
 | [抖音-公司要求学AI考证书指南](personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md) | 公司要求学AI，考哪个AI证书？ | #AI证书 #职场人学AI #简历加分 | ✅ 已导入 |
+
+
+---
+
+## 🤖 Codex 笔记（personal/notes/codex_notes/）
+
+| ID | 标题 | 标签 | 状态 |
+|----|------|------|------|
 | [抖音-让Codex干活飞起](personal/notes/codex_notes/抖音-让Codex干活飞起-小韦用AI.md) | Codex五大插件实测：HyperFrame/Computer Use/Chrome/Slides/Coder | #Codex #AI插件 #提效神器 | ✅ 已导入 |
+
+---
+
+## 📓 Obsidian 笔记（personal/notes/obsidian/）
+
+| ID | 标题 | 标签 | 状态 |
+|----|------|------|------|
+| *暂无* | | | |
+
+---
 
 ### 博文草稿（drafts/）
 | ID | 标题 | 标签 | 状态 |
@@ -97,7 +117,7 @@
 → 查 `ai-hotspots/people/{人名}.md`
 
 **问题：我的笔记里有关于 XX 的内容吗？**
-→ 查 `personal/notes/` + 全局搜索 `#标签`
+→ 查 `personal/notes/` 及其子目录（`codex_notes/`、`obsidian/`）+ 全局搜索 `#标签`
 
 ---
 
@@ -105,7 +125,9 @@
 
 | 类别 | 条目数 |
 |------|--------|
-| 个人笔记 | 3 |
+| 个人笔记 | 2 |
+| Codex 笔记 | 1 |
+| Obsidian 笔记 | 0 |
 | 博文草稿 | 0 |
 | 选题想法 | 0 |
 | AI 热点 | 1 |
