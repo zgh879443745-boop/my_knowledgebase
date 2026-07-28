@@ -200,6 +200,17 @@
   },
   "active": "0f1904e89c8c1951",
   "lastOpenFiles": [
+    "personal/notes/douyin-ai-favorites.md",
+    "personal/notes/douyin-ai-favorites-links.json",
+    "tools/douyin-favorites-to-knowledge/src/douyin_favorites_knowledge/__pycache__/workflow.cpython-310.pyc",
+    "tools/douyin-favorites-to-knowledge/src/douyin_favorites_knowledge/__pycache__/security.cpython-310.pyc",
+    "tools/douyin-favorites-to-knowledge/src/douyin_favorites_knowledge/__pycache__/config.cpython-310.pyc",
+    "tools/douyin-favorites-to-knowledge/src/douyin_favorites_knowledge/__pycache__/browser_collector.cpython-310.pyc",
+    "tools/douyin-favorites-to-knowledge/src/douyin_favorites_knowledge/__pycache__/adapters.cpython-310.pyc",
+    "tools/douyin-favorites-to-knowledge/src/douyin_favorites_knowledge/__pycache__/cli.cpython-310.pyc",
+    "tools/douyin-favorites-to-knowledge/src/douyin_favorites_knowledge/__pycache__/__main__.cpython-310.pyc",
+    "tools/douyin-favorites-to-knowledge/src/douyin_favorites_knowledge/__pycache__/__init__.cpython-310.pyc",
+    "tools/douyin-favorites-to-knowledge/src/douyin_favorites_knowledge/__pycache__",
     "7666386850314980648.md",
     "7665905783553468857.md",
     "7665812689277115897.md",
@@ -225,17 +236,6 @@
     "7658147942138541797.md",
     "7657870982782160174.md",
     "7657620402915271867.md",
-    "7657520128192029358.md",
-    "tools/douyin_page.png",
-    "tools/find_ai_folder.py",
-    "tools/douyin-favorites-to-knowledge/build/bdist.win-amd64",
-    "tools/douyin-favorites-to-knowledge/build/lib/douyin_favorites_knowledge/__main__.py",
-    "tools/douyin-favorites-to-knowledge/build/lib/douyin_favorites_knowledge/__init__.py",
-    "tools/douyin-favorites-to-knowledge/build/lib/douyin_favorites_knowledge/workflow.py",
-    "tools/douyin-favorites-to-knowledge/build/lib/douyin_favorites_knowledge/config.py",
-    "tools/douyin-favorites-to-knowledge/build/lib/douyin_favorites_knowledge/security.py",
-    "tools/douyin-favorites-to-knowledge/build/lib/douyin_favorites_knowledge/cli.py",
-    "tools/douyin-favorites-to-knowledge/build/lib/douyin_favorites_knowledge/browser_collector.py",
-    "tools/douyin-favorites-to-knowledge/build/lib/douyin_favorites_knowledge/adapters.py"
+    "tools/douyin_page.png"
   ]
 }
