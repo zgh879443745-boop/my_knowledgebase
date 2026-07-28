@@ -1,4 +1,4 @@
-# 🔄 标准操作流程 (SOP)
+﻿# 🔄 标准操作流程 (SOP)
 
 > **本文件定义所有 Agent 必须遵循的操作剧本。**
 
@@ -31,7 +31,7 @@
 
 #### 3. 文件命名与冲突检测
 - **命名规则**：`抖音-视频标题前20字-作者.md`（例如：`抖音-公司要求学AI考证书指南-宁说宁话.md`）。
-- **冲突检测**：
+- **冲突检测**：先按主题关键词判断目标子目录（见 AGENTS.md 主题关键词自动分类总表），再检查对应路径下是否有同名文件。
   - 检查 `D:\my_knowledgebase\personal\notes\` 下是否存在同名文件。
   - **如果冲突**：
     1. 提示用户："⚠️ 视频重复，知识库中已存在该内容：" + [展示旧内容]。
@@ -40,7 +40,10 @@
     4. **若用户拒绝**：停止操作，提示用户手动检查。
 
 #### 4. 合入知识库
-- **写入路径**：`D:\my_knowledgebase\personal\notes\`。
+- **写入路径**：按主题关键词自动分流（详见 AGENTS.md 🏷️ 主题关键词自动分类总表）
+  - Codex 类：`D:\my_knowledgebase\personal\notes\codex_notes\`（目录不存在时自动创建）
+  - Obsidian 类：`D:\my_knowledgebase\personal\notes\obsidian\`（目录不存在时自动创建）
+  - 默认：`D:\my_knowledgebase\personal\notes\`
 - **更新索引**：
   - 打开 `D:\my_knowledgebase\index.md`。
   - 在 `🧠 个人知识库` 表格中追加新行（或更新旧行）。

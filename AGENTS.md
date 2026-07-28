@@ -1,4 +1,4 @@
-# AGENTS.md — 知识库入口指南
+﻿# AGENTS.md — 知识库入口指南
 
 > **任何接入此知识库的 AI Agent 必须在处理用户请求前首先阅读本文档。**
 > 本文档由系统自动加载，是 Agent 的"入职第一页"。
@@ -37,7 +37,9 @@
 | 用户表述 | 目标库 | 写入路径 |
 |---------|--------|---------|
 | "上传到 **AI热点**" / "合入 **ai-hotspots**" | `ai-hotspots/` | `ai-hotspots/hotspots/` |
-| **未指定** / "合入**个人**知识库" | `personal/` | `personal/notes/`（有子文件夹要求则创建） |
+| **未指定** / "合入**个人**知识库" — 内容含 Codex 关键词（不区分大小写，含 Codex/CODEX/Codex CLI/Codex教程 等变体） | `personal/` | `personal/notes/codex_notes/`（自动创建） |
+| **未指定** / "合入**个人**知识库" — 内容含 Obsidian 关键词（不区分大小写） | `personal/` | `personal/notes/obsidian/`（自动创建） |
+| **未指定** / "合入**个人**知识库" — 内容不含上述任一关键词 | `personal/` | `personal/notes/`（有子文件夹要求则创建） |
 
 ### A2. 环境检查
 
@@ -63,7 +65,7 @@ py -3.10 D:\my_knowledgebase\tools\douyin-to-obsidian\douyin_to_obsidian.py --li
 确认后，按 [📝 笔记模板](#笔记模板) 格式写入：
 
 - **文件命名**：`抖音-{全标题}-{作者}.md`
-- **存放路径**：按 A1 路由规则决定
+- **存放路径**：按 A1 路由规则决定。根据内容关键词自动分流至对应子目录（`codex_notes/`、`obsidian/` 或默认 `notes/`）
 - **冲突检测**：同名文件存在时提示用户，确认后覆盖
 
 ### A6. 更新索引
@@ -81,11 +83,22 @@ py -3.10 D:\my_knowledgebase\tools\douyin-to-obsidian\douyin_to_obsidian.py --li
 
 用户说"帮我把这段文字记到知识库"时：
 
+### B1. 主题关键词自动分类
+
+写入前先扫描内容，按以下优先级匹配主题关键词（不区分大小写），自动选择存储子目录：
+
+| 关键词（子串匹配，不区分大小写） | 存储路径 |
+|-------------------------------|---------|
+| `codex`、`CODEX`、`Codex CLI`、`Codex教程` 等含 Codex 的变体 | `personal/notes/codex_notes/` |
+| `obsidian`、`Obsidian`、`OBSIDIAN` 等含 Obsidian 的变体 | `personal/notes/obsidian/` |
+| 无匹配 | `personal/notes/`（默认） |
+
+### B2. 内容处理
+
 1. **理解内容**：分析用户提供的文字，提取标题、标签、核心观点
 2. **缺失字段询问**：标题不明、标签缺失时先问用户
-3. **写入路径**：默认 `personal/notes/`
-4. **格式**：`{简短标题}.md`，非抖音内容不加"抖音-"前缀
-5. **内容结构**：遵循 [📝 笔记模板](#笔记模板)，跳过"原始转录"段落
+3. **格式**：`{简短标题}.md`，非抖音内容不加"抖音-"前缀
+4. **内容结构**：遵循 [📝 笔记模板](#笔记模板)，跳过"原始转录"段落
 
 ---
 
@@ -151,7 +164,7 @@ author: {作者}
 
 | 知识库 | 规则 |
 |--------|------|
-| `personal/` | 用户主动要求创建子文件夹分类时 **允许**，否则默认 `personal/notes/` |
+| `personal/` | 用户主动要求创建子文件夹分类时 **允许**；`codex_notes/` 和 `obsidian/` 在匹配到对应关键词时 **自动创建**，无需用户确认；否则默认 `personal/notes/` |
 | `ai-hotspots/` | ❌ **绝对禁止** 新建一级文件夹，目录结构固定 |
 
 ---
@@ -162,6 +175,8 @@ author: {作者}
 |------|---------|
 | 知识库根目录 | `D:\my_knowledgebase` |
 | 个人笔记 | `D:\my_knowledgebase\personal\notes\` |
+| Codex 相关笔记 | `D:\my_knowledgebase\personal\notes\codex_notes\` |
+| Obsidian 相关笔记 | `D:\my_knowledgebase\personal\notes\obsidian\` |
 | AI 热点 | `D:\my_knowledgebase\ai-hotspots\hotspots\` |
 | 抖音 Skill | `D:\my_knowledgebase\tools\douyin-to-obsidian\` |
 | 错字修正 | `D:\my_knowledgebase\tools\douyin-to-obsidian\text_corrections.json` |
@@ -176,9 +191,23 @@ author: {作者}
 - ❌ 未经用户确认覆盖已有文件
 - ❌ 跳过 `index.md` 和 `log.md` 更新
 - ❌ 创建无摘要/无观点的空壳笔记
-- ❌ 未经用户明确要求，在 `personal/` 下自创文件夹
+- ❌ 未经用户明确要求，在 `personal/` 下自创文件夹（`codex_notes/` 和 `obsidian/` 例外，匹配对应关键词时自动创建）
 - ❌ 在 `ai-hotspots/` 下新建一级文件夹
 - ❌ 翻译英文插件/产品名称（保留原名）
+
+---
+
+## 🏷️ 主题关键词自动分类总表
+
+> 以下关键词匹配规则适用于 **流程A（抖音）** 和 **流程B（快速笔记）**，统一管理内容自动分流。
+
+| 主题 | 匹配关键词（子串，不区分大小写） | 存储子目录 |
+|------|-------------------------------|-----------|
+| Codex | `codex`、`CODEX`、`Codex CLI`、`Codex教程` 等 | `personal/notes/codex_notes/` |
+| Obsidian | `obsidian`、`OBSIDIAN`、`Obsidian教程` 等 | `personal/notes/obsidian/` |
+
+> **匹配优先级**：按上表从上到下匹配，命中即停止。Codex 优先级高于 Obsidian。
+> **index.md 要求**：每个主题子目录在 index.md 中拥有独立的索引段落。
 
 ---
 

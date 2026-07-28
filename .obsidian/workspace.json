@@ -11,14 +11,14 @@
             "id": "88d0ed7e49cc84c7",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "tools/douyin-to-obsidian/README.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ]
@@ -202,22 +202,33 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "88d0ed7e49cc84c7",
+  "active": "6c57062620f3289f",
   "lastOpenFiles": [
+    "personal/notes/obsidian",
+    "tools/douyin-to-obsidian/SKILL.md",
+    "tools/douyin-to-obsidian/README.md",
+    "personal/notes/codex_notes/抖音-让Codex干活飞起-小韦用AI.md",
+    "tools/get-ai-video-link/__pycache__/browser_login.cpython-310.pyc",
+    "tools/get-ai-video-link/__pycache__/config.cpython-310.pyc",
+    "tools/get-ai-video-link/__pycache__",
+    "tools/get-ai-video-link/SKILL.md",
+    "tools/get-ai-video-link/README.md",
+    "tools/get-ai-video-link/requirements.txt",
+    "tools/get-ai-video-link/collect_ai_links.py",
+    "tools/get-ai-video-link/config.py",
+    "tools/get-ai-video-link/config.example.py",
+    "tools/get-ai-video-link/browser_login.py",
+    "tools/get-ai-video-link",
+    "personal/notes/抖音-公司要求学AI考证书指南-宁说宁话.md",
+    "personal/notes/抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室.md",
+    "personal/notes/douyin-ai-favorites.md",
+    "tools/douyin-favorites-to-knowledge/README.md",
+    "temp_note.py",
+    "personal/notes/get-ai-video-link-skill.md",
+    "tools/douyin_page.png",
     "tools/douyin-favorites-to-knowledge/skill/SKILL.md",
     "7568365600645385515.md",
     "7484525645540707594.md",
-    "personal/notes/douyin-ai-favorites.md",
-    "personal/notes/douyin-ai-favorites-links.json",
-    "personal/notes/douyin-ai-favorites.md.bak",
-    "personal/notes/douyin-ai-favorites-links.json.bak",
-    "tools/douyin-favorites-to-knowledge/src/douyin_favorites_knowledge/__pycache__/workflow.cpython-310.pyc",
-    "tools/douyin-favorites-to-knowledge/src/douyin_favorites_knowledge/__pycache__/security.cpython-310.pyc",
-    "tools/douyin-favorites-to-knowledge/src/douyin_favorites_knowledge/__pycache__/config.cpython-310.pyc",
-    "tools/douyin-favorites-to-knowledge/src/douyin_favorites_knowledge/__pycache__/browser_collector.cpython-310.pyc",
-    "tools/douyin-favorites-to-knowledge/src/douyin_favorites_knowledge/__pycache__/adapters.cpython-310.pyc",
-    "tools/douyin-favorites-to-knowledge/src/douyin_favorites_knowledge/__pycache__/cli.cpython-310.pyc",
-    "tools/douyin-favorites-to-knowledge/src/douyin_favorites_knowledge/__pycache__/__main__.cpython-310.pyc",
     "7666386850314980648.md",
     "7665905783553468857.md",
     "7665812689277115897.md",
@@ -229,17 +240,6 @@
     "7664187132163984676.md",
     "7664164847550560229.md",
     "7664150164537363738.md",
-    "7663718133945881957.md",
-    "7663451173940462666.md",
-    "7662395979077258161.md",
-    "7661208881972093285.md",
-    "7660878669041425777.md",
-    "7659951029026377002.md",
-    "7659765082682952987.md",
-    "7659008392372303743.md",
-    "7658946921398029619.md",
-    "7658567098902280369.md",
-    "7658223942092811001.md",
-    "tools/douyin_page.png"
+    "7663718133945881957.md"
   ]
 }

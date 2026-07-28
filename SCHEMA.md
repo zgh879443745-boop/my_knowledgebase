@@ -1,4 +1,4 @@
-# AI 博主知识库 — Schema
+﻿# AI 博主知识库 — Schema
 
 > 基于 Karpathy/llm-wiki.md 模式构建，由 AI Agent 自动维护，人类用 Obsidian 浏览。
 
@@ -22,7 +22,9 @@ MyKnowledge_base/
 │
 ├── raw_sources/         ← 原始素材（用户投喂的链接/文本/视频，AI 不修改）
 ├── personal/            ← 个人知识库（用户自行输入的内容）
-│   ├── notes/           ← 个人笔记
+│   ├── notes/           ← 个人笔记（默认存放）
+│   │   ├── codex_notes/ ← Codex 主题笔记（自动分流）
+│   │   └── obsidian/    ← Obsidian 主题笔记（自动分流）
 │   ├── drafts/          ← 博文草稿
 │   └── ideas/           ← 选题想法
 │
@@ -64,7 +66,9 @@ MyKnowledge_base/
 | 用户表述 | 目标库 | 存放路径 |
 |---------|--------|---------|
 | "上传到**AI热点**" / "合入**ai-hotspots**" | `ai-hotspots/` | `ai-hotspots/hotspots/` |
-| **未指定**目标库 / "合入**个人知识库**" | `personal/` | `personal/notes/`（有子文件夹要求则创建子文件夹） |
+| **未指定**目标库 / "合入**个人知识库**" — 内容含 Codex 关键词（不区分大小写） | `personal/` | `personal/notes/codex_notes/`（自动创建） |
+| **未指定**目标库 / "合入**个人知识库**" — 内容含 Obsidian 关键词（不区分大小写） | `personal/` | `personal/notes/obsidian/`（自动创建） |
+| **未指定**目标库 / "合入**个人知识库**" — 内容不含上述关键词 | `personal/` | `personal/notes/`（有子文件夹要求则创建子文件夹） |
 
 > ⚠️ 不可自行判断抖音内容属于哪个库，必须以上述规则为准。
 ## ⚡ 用户语义 → 目标库 映射规则（所有 Agent 必须首先阅读本节）
@@ -140,7 +144,8 @@ MyKnowledge_base/
 4. 提取关键概念，更新 `concepts/` 中相关页面
 5. 更新 `index.md`（个人知识库段落）和 `log.md`
 **子目录规则**：
-- 用户**主动要求**在 personal/ 下创建新文件夹（如 "codex_notes"）用于分类，则允许创建，内容合入该子目录
+- 用户**主动要求**在 personal/ 下创建新文件夹用于分类，则允许创建，内容合入该子目录
+- `codex_notes/` 和 `obsidian/` 匹配到对应关键词时 **自动创建**，无需用户额外确认
 - 用户**未指定**文件夹时，默认合入 `personal/notes/`
 
 

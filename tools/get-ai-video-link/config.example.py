@@ -1,0 +1,35 @@
+﻿# -*- coding: utf-8 -*-
+"""get-ai-video-link \u914d\u7f6e\u6587\u4ef6
+
+\u590d\u5236\u672c\u6587\u4ef6\u4e3a config.py \u5e76\u4fee\u6539\u914d\u7f6e\u3002
+\u5982\u679c\u4e0d\u521b\u5efa config.py\uff0c\u811a\u672c\u5c06\u4f7f\u7528\u9ed8\u8ba4\u503c\u3002
+"""
+
+from pathlib import Path
+
+# ---- \u6536\u85cf\u5939\u914d\u7f6e ----
+# \u6296\u97f3\u6536\u85cf\u5939\u300cAi\u300d\u7684 collects_id
+# \u5982\u679c\u6296\u97f3\u66f4\u65b0\u4e86 ID\uff0c\u53ef\u901a\u8fc7\u6d4f\u89c8\u5668\u5f00\u53d1\u8005\u5de5\u5177\u622a\u83b7
+COLLECTS_ID = "7610341807192299291"
+
+# ---- \u8f93\u51fa\u8def\u5f84 ----
+# \u94fe\u63a5\u6587\u6863\u8f93\u51fa\u76ee\u5f55
+OUTPUT_DIR = Path("D:/my_knowledgebase/personal/notes")
+
+# ---- \u6d4f\u89c8\u5668 profile ----
+# \u5982\u679c\u4e4b\u524d\u5df2\u901a\u8fc7 douyin-favorites-to-knowledge \u767b\u5f55\uff0c
+# \u53ef\u6307\u5411\u5176 profile \u76ee\u5f55\u4ee5\u590d\u7528\u767b\u5f55\u6001
+# BROWSER_PROFILE_DIR = Path("C:/Users/v_qqghzhang/AppData/Local/douyin-favorites-to-knowledge/browser-profile")
+
+# \u9ed8\u8ba4\u4f7f\u7528 get-ai-video-link \u81ea\u5df1\u7684 profile\uff0c\u9996\u6b21\u4f7f\u7528\u9700\u8981\u8fd0\u884c login
+BROWSER_PROFILE_DIR = None  # None = \u4f7f\u7528\u9ed8\u8ba4\u4f4d\u7f6e (%LOCALAPPDATA%/get-ai-video-link/browser-profile)
+
+# ---- \u91c7\u96c6\u914d\u7f6e ----
+# \u5355\u6b21\u91c7\u96c6\u6700\u5927\u6761\u6570
+MAX_ITEMS = 100
+
+# \u5206\u9875\u5927\u5c0f\uff08\u6bcf\u9875\u6700\u591a 20\uff09
+PAGE_SIZE = 20
+
+# \u5206\u9875\u95f4\u9694\uff08\u79d2\uff09\uff0c\u907f\u514d\u8bf7\u6c42\u8fc7\u5feb
+FETCH_DELAY = 0.5
