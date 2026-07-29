@@ -1,11 +1,12 @@
----
-title: AI不是变笨了，是你装的工具太吵 AI Agent Skills 怎么管理？当工具说明、触发条件和插件越来越多，AI 可能更容易选错，而不是变得更聪明。 #AI工具 #AIAgent #codex #Skills #Github
-tags: [抖音, 视频笔记, 2026]
+﻿---
+title: AI不是变笨了，是你装的工具太吵 AI [[Agent]] [[Skills]] 怎么管理？当工具说明、触发条件和插件越来越多，AI 可能更容易选错，而不是变得更聪明。 #AI工具 #AIAgent #[[Codex]] #Skills #Github
+tags: [Codex, Agent, Skill, Skills管理, GitHub, AI工具]
 source: https://www.douyin.com/video/7664150164537363738
 date: 2026-07-28
+related: [[MOC-Agent]], [[MOC-Codex]], [[MOC-浏览器自动化]], [[MOC-AI学习路径]], [[让Codex干活飞起]], [[Pi Agent：比 Codex 更适合普通人的AI工具]], [[一个Skill让Agent自动操作浏览器]]
 ---
 
-# AI不是变笨了，是你装的工具太吵 AI Agent Skills 怎么管理？当工具说明、触发条件和插件越来越多，AI 可能更容易选错，而不是变得更聪明。 #AI工具 #AIAgent #codex #Skills #Github
+# AI不是变笨了，是你装的工具太吵 AI [[Agent]] [[Skills]] 怎么管理？当工具说明、触发条件和插件越来越多，AI 可能更容易选错，而不是变得更聪明。 #AI工具 #AIAgent #[[Codex]] #Skills #Github
 
 ## 原始内容
 

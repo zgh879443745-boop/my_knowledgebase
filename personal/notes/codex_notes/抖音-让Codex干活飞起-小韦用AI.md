@@ -1,9 +1,10 @@
----
+﻿---
 title: 让Codex干活飞起 | Codex五大插件实测
-tags: [抖音, 视频笔记, 2026, Codex, AI插件, 提效工具]
+tags: [Codex, Agent, Skill, Coder, VibeCoding, HyperFrame, Computer-Use, Chrome, Slides, 浏览器自动化, PPT, 插件实测]
 source: https://v.douyin.com/3Pa-U3-HhLM/
 date: 2025-07-11
 author: 小韦用AI
+related: [[MOC-Agent]], [[MOC-Codex]], [[MOC-浏览器自动化]], [[MOC-AI学习路径]], [[AI Agent Skills 怎么管理]], [[Pi Agent：比 Codex 更适合普通人的AI工具]], [[一个Skill让Agent自动操作浏览器]], [[firecrawl免API调用]]
 ---
 
 # 让Codex干活飞起 | Codex五大插件实测
@@ -32,22 +33,22 @@ Codex 最近火出圈了。作者做过一期插件实测视频播放量破百�
 
 ### 插件五：Coder — Vibe Coding 启蒙
 
-走 Vibe Coding 这条路是迟早的事，随时开发自己的小工具令人上瘾。Coder 把一个顶级编程团队的协作方式拆解成了步骤：不会上来就写代码，而是先问问题、整理需求、理清思路，再告诉你该分几步做。多做几个项目，"先想清楚再动手"的思维就慢慢长进了脑子里，从会提需求变成会做事。
+走 [[VibeCoding]] 这条路是迟早的事，随时开发自己的小工具令人上瘾。Coder 把一个顶级编程团队的协作方式拆解成了步骤：不会上来就写代码，而是先问问题、整理需求、理清思路，再告诉你该分几步做。多做几个项目，"先想清楚再动手"的思维就慢慢长进了脑子里，从会提需求变成会做事。
 
 ## 整体链路
 
 这五个插件形成了完整的工作链路：
-控制浏览器（Chrome）→ 做文档/PPT（Slides）→ 做动态内容（HyperFrame）→ 编程开发（Coder）→ 掌控整台电脑（Computer Use）
+控制浏览器（[[Chrome 插件]]）→ 做文档/PPT（[[Slides 插件]]）→ 做动态内容（[[HyperFrame]]）→ 编程开发（[[Coder 插件]]）→ 掌控整台电脑（[[Computer Use]]）
 
 装好这五个插件，Codex 就能替你做日常重复工作，腾出时间和精力做更有价值的事。
 
 ## 笔记
 
-- HyperFrame：自然语言 → 动态页面/视频渲染
-- Computer Use：macOS + Windows 全平台，自主操作电脑
-- Chrome：浏览器自动化，多标签不独占，适合数据汇总
-- Slides：文件扔进去自动生成 PPT + 自检修复
-- Coder：Vibe Coding 入门，先理需求再动手
+- [[HyperFrame]]：自然语言 → 动态页面/视频渲染
+- [[Computer Use]]：macOS + Windows 全平台，自主操作电脑
+- [[Chrome 插件]]：浏览器自动化，多标签不独占，适合数据汇总
+- [[Slides 插件]]：文件扔进去自动生成 PPT + 自检修复
+- [[Coder 插件]]：Vibe Coding 入门，先理需求再动手
 - 五个插件形成完整链路，覆盖"浏览→文档→动态→编程→系统操控"
 
 ## 标签
