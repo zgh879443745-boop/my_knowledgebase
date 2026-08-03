@@ -61,6 +61,7 @@
 👉 [今日热点速览](今日热点速览.md) — 最近一次采集的热点中文标题
 
 ### 近期热点（hotspots/）
+- [2026-08-03 AI热点](ai-hotspots/hotspots/AI热点-2026-08-03.md)
 - [2026-07-28 AI热点](ai-hotspots/hotspots/AI热点-2026-07-28.md)
 - [2026-07-22 AI热点](ai-hotspots/hotspots/AI热点-2026-07-22.md)
 - [2026-07-20 AI热点](ai-hotspots/hotspots/AI热点-2026-07-20.md)
@@ -127,7 +128,8 @@
 |------|--------|
 | 个人笔记 | 2 |
 | Codex 笔记 | 1 |
-| Obsidian 笔记 | 0 || MOC 主题索引 | 4 |
+| Obsidian 笔记 | 0 |
+| MOC 主题索引 | 4 |
 
 | MOC 主题索引 | 4 |
 | 博文草稿 | 0 |
