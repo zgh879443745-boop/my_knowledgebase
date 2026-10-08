@@ -4,7 +4,7 @@ tags: [LLM-Wiki, GBrain, RAG, 知识管理, Agent, Karpathy, 知识库架构]
 source: https://v.douyin.com/pY-mrw5qcPM/
 date: 2026-06-05
 author: Frank的Agent实验室
-related: [[MOC-Agent]], [[AI Agent Skills 怎么管理]], [[firecrawl免API调用]]
+related: [[MOC-Agent]], [[抖音-AI不是变笨了，是你装的工具太吵 AI Agent Skills 怎么管理？当工具说明、触发条件和插件越来越多，AI 可能更容易选错，而不是变得更聪明。 #AI工具 #AIAgent #codex #Skills #Github-未知作者]], [[抖音-firecrawl免API调用 让数据获取轻而易举 🔍API调用还在卡壳？现在firecrawl直接免Api直接调用，把数据喂到嘴边🚀零代码抓取，新手也能...-未知作者]]
 ---
 
 # [[LLM Wiki]] 和 [[GBrain]] 真正的差别2

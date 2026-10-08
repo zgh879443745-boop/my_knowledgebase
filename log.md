@@ -53,3 +53,25 @@
 - **保存路径**: `personal/notes/codex_notes/抖音-让Codex干活飞起-小韦用AI.md`
 - **修复**: codex_notes 从文件恢复为正确目录结构
 - **索引更新**: ✅ 已更新 `index.md`
+## [2026-10-08] moc | 创建 4 个 MOC 主题索引
+- MOC-Agent → personal/mocs/MOC-Agent.md
+- MOC-Codex → personal/mocs/MOC-Codex.md
+- MOC-浏览器自动化 → personal/mocs/MOC-浏览器自动化.md
+- MOC-AI学习路径 → personal/mocs/MOC-AI学习路径.md
+
+## [2026-10-08] concept | 生成概念页 Agent
+- 概念：Agent（智能体）
+- 路径：concepts/Agent.md
+- 依据：被 4 篇不同笔记引用，达到 ≥3 阈值
+
+## [2026-10-08] graph-check | 图谱健康检查
+- 报告：lint_reports/lint-graph-20261008.md
+- 幽灵节点：28 个
+- 孤立笔记：8 篇
+- 主要问题：wikilink 使用简称，与精确文件名不匹配
+
+## [2026-10-08] graph-repair | 统一修复图谱链接
+- 修复范围：personal/notes/、personal/mocs/、concepts/
+- 修复内容：将笔记简称统一为精确文件名，修复 `[[[[OpenConnector]]]]`，补建概念页 20 个
+- 复检结果：幽灵节点 0 个，孤立 Markdown 笔记 0 篇
+- 索引更新：✅ 已更新 `index.md` 概念索引与统计

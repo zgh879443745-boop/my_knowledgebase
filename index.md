@@ -1,18 +1,30 @@
-﻿# AI 博主知识库 — 总索引
+# AI 博主知识库 — 总索引
 
 > 基于 Karpathy/llm-wiki.md 模式，由 AI Agent 自动维护。
-> 最后更新: 2026-07-29
+> 最后更新: 2026-10-08
 
 ---
 
 ## 📖 使用指南
 
 - **个人内容**: 见下方「个人知识库」段落
+- **主题索引**: 见下方「MOC 主题索引」段落
 - **Codex 笔记**: 见下方「Codex 笔记」段落
 - **Obsidian 笔记**: 见下方「Obsidian 笔记」段落
 - **AI 热点**: 见下方「AI 行业热点库」段落
 - **时间线查询**: 见 `timeline/` 目录
 - **冲突报告**: 见 `lint_reports/` 目录
+
+---
+
+## 🗺️ MOC 主题索引（personal/mocs/）
+
+| MOC 页面 | 覆盖主题 |
+|----------|---------|
+| [MOC-Agent](personal/mocs/MOC-Agent.md) | AI Agent 生态、工具链、安全 |
+| [MOC-Codex](personal/mocs/MOC-Codex.md) | Codex 插件、Skills、对比评测 |
+| [MOC-浏览器自动化](personal/mocs/MOC-浏览器自动化.md) | EgoLight、Chrome、firecrawl |
+| [MOC-AI学习路径](personal/mocs/MOC-AI学习路径.md) | AI 证书、Agent 入门、实操路径 |
 
 ---
 
@@ -61,6 +73,7 @@
 👉 [今日热点速览](今日热点速览.md) — 最近一次采集的热点中文标题
 
 ### 近期热点（hotspots/）
+- [2026-10-08 AI热点](ai-hotspots/hotspots/AI热点-2026-10-08.md)
 - [2026-09-08 AI热点](ai-hotspots/hotspots/AI热点-2026-09-08.md)
 - [2026-08-24 AI热点](ai-hotspots/hotspots/AI热点-2026-08-24.md)
 - [2026-08-03 AI热点](ai-hotspots/hotspots/AI热点-2026-08-03.md)
@@ -87,7 +100,27 @@
 ### 概念索引（concepts/）
 | 概念名 | 说明 | 关联热点数 |
 |---------|------|------------|
-| *暂无* | | |
+| [Agent](concepts/Agent.md) | AI 智能体与任务/编码型 Agent | 0 |
+| [Codex](concepts/Codex.md) | 编码型 Agent 与插件生态 | 0 |
+| [Skill](concepts/Skill.md) | Agent 能力模块 | 0 |
+| [Skills](concepts/Skills.md) | Skills 组合与治理 | 0 |
+| [firecrawl](concepts/firecrawl.md) | AI 网页抓取与内容转换 | 0 |
+| [Chrome 插件](concepts/Chrome%20插件.md) | 浏览器自动化插件 | 0 |
+| [EgoLight](concepts/EgoLight.md) | Agent 浏览器自动化运行环境 | 0 |
+| [VibeCoding](concepts/VibeCoding.md) | 自然语言协作编程 | 0 |
+| [HyperFrame](concepts/HyperFrame.md) | 动态页面生成插件 | 0 |
+| [PiAgent](concepts/PiAgent.md) | 日常任务型 Agent | 0 |
+| [GBrain](concepts/GBrain.md) | AI 知识操作系统 | 0 |
+| [LLM Wiki](concepts/LLM%20Wiki.md) | 文件化 AI 知识库框架 | 0 |
+| [OpenConnector](concepts/OpenConnector.md) | Agent-SaaS 认证网关 | 0 |
+| [人工智能训练师](concepts/人工智能训练师.md) | AI 职业技能方向 | 0 |
+| [Coder 插件](concepts/Coder%20插件.md) | 编程协作插件 | 0 |
+| [Computer Use](concepts/Computer%20Use.md) | 电脑操控能力 | 0 |
+| [RAG](concepts/RAG.md) | 检索增强生成 | 0 |
+| [Slides 插件](concepts/Slides%20插件.md) | PPT 生成插件 | 0 |
+| [Karpathy](concepts/Karpathy.md) | AI 研究者与知识库方法相关人物 | 0 |
+| [ClaudeCode](concepts/ClaudeCode.md) | 编码型 AI 工具 | 0 |
+| [WalkBody](concepts/WalkBody.md) | 办公自动化 Agent 工具 | 0 |
 
 ### 人物索引（people/）
 | 人名 | 身份 | 关联热点数 |
@@ -132,12 +165,10 @@
 | Codex 笔记 | 1 |
 | Obsidian 笔记 | 0 |
 | MOC 主题索引 | 4 |
-
-| MOC 主题索引 | 4 |
 | 博文草稿 | 0 |
 | 选题想法 | 0 |
 | AI 热点 | 1 |
-| 概念页 | 0 |
+| 概念页 | 21 |
 | 人物页 | 0 |
 | 公司页 | 0 |
-| 逻辑冲突报告 | 0 |
+| 逻辑冲突报告 | 1 |

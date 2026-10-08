@@ -1,4 +1,4 @@
-﻿# AI 博主知识库 — Schema
+# AI 博主知识库 — Schema
 
 > 基于 Karpathy/llm-wiki.md 模式构建，由 AI Agent 自动维护，人类用 Obsidian 浏览。
 
@@ -25,6 +25,7 @@ MyKnowledge_base/
 │   ├── notes/           ← 个人笔记（默认存放）
 │   │   ├── codex_notes/ ← Codex 主题笔记（自动分流）
 │   │   └── obsidian/    ← Obsidian 主题笔记（自动分流）
+│   ├── mocs/            ← MOC 主题索引页（图谱枢纽）
 │   ├── drafts/          ← 博文草稿
 │   └── ideas/           ← 选题想法
 │
@@ -52,6 +53,7 @@ MyKnowledge_base/
 | 选题想法 | `PI-{序号}-{标题}.md` | `PI-001-agent-framework-review.md` |
 | AI 热点 | `AH-{YYYYMMDD}-{简短描述}.md` | `AH-20260603-gpt5-release.md` |
 | 概念页 | `{概念名}.md` | `concepts/RAG.md` |
+| MOC 主题索引 | `MOC-{主题}.md` | `personal/mocs/MOC-Agent.md` |
 | 人物页 | `{人名}.md` | `ai-hotspots/people/李飞飞.md` |
 | 公司页 | `{公司名}.md` | `ai-hotspots/companies/OpenAI.md` |
 | 每日简报 | `YYYY-MM-DD.md` | `ai-hotspots/daily/2026-06-03.md` |
@@ -197,6 +199,12 @@ MyKnowledge_base/
 - **状态冲突**：某产品在同一时间既被描述为"已发布"又被描述为"未发布"
 - **孤立页面**：有出链但无入链的页面
 - **重复热点**：同一事件被录入多次
+- **幽灵节点**：wikilink 指向不存在的页面
+- **孤立笔记**：无任何入链的笔记
+
+**概念页自动生成**：某 [[wikilink]] 被 **≥3 篇不同笔记**引用且 concepts/ 无对应页面时，自动创建 concepts/{概念名}.md（一句话定义 + 关联笔记列表）。
+
+**图谱健康检查**：每次新内容合入（流程A/流程B）完成后执行一次，问题清单写入 lint_reports/lint-graph-YYYYMMDD.md。
 
 **冲突处理流程**：
 1. AI 扫描所有页面，检测冲突
@@ -306,4 +314,4 @@ YYYY-MM-DD
 4. **逻辑冲突检测报告必须等待用户反馈后再处理**
 5. **原始素材（`raw_sources/`）AI 只读不改**
 6. **`index.md` 每次录入后必须更新**
-7. **`log.md` 每次操作后必须追加记录**
+7. **`log.md` 每次操作后必须追加记录**（笔记/热点入库、MOC 创建、概念页生成、图谱检查均需记录）

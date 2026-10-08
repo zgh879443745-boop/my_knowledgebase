@@ -1,4 +1,4 @@
-﻿# 🔄 标准操作流程 (SOP)
+# 🔄 标准操作流程 (SOP)
 
 > **本文件定义所有 Agent 必须遵循的操作剧本。**
 
@@ -56,7 +56,10 @@
 - **标签检查**：确认 frontmatter `tags:` 包含具体主题词（禁止仅 `[抖音, 视频笔记, 2026]`）。
 - **双链注入**：在正文核心概念首次出现处插入 `[[wikilink]]`（如 `[[Agent]]`、`[[Codex]]`）。
 - **related 填写**：在 frontmatter 中填写至少 1-2 条 `related:` 关联笔记。
-- **MOC 维护**：检查对应 MOC 页面（如 `MOC-Agent.md`、`MOC-Codex.md`）是否已收录本条笔记，未收录则追加。
+- **MOC 维护**：检查 personal/mocs/ 下对应 MOC 页面（如 MOC-Agent.md、MOC-Codex.md）是否已收录本条笔记，未收录则追加；若同一新主题已累积 ≥2 篇且无 MOC 覆盖，按 AGENTS.md 规则自动创建新 MOC。
+- **概念页生成**：检查正文 wikilink 是否被 ≥3 篇不同笔记引用，达到阈值且 concepts/ 无页面时自动创建概念页。
+- **图谱健康检查**：合入完成后扫描幽灵节点与孤立笔记，问题清单追加至 lint_reports/lint-graph-YYYYMMDD.md。
+- **log 记录**：将「笔记入库 / MOC 创建 / 概念页生成 / 图谱检查」事件均追加至 log.md。
 
 #### 5. 结果反馈
 - 向用户展示：

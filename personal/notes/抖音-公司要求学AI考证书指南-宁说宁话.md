@@ -4,7 +4,7 @@ tags: [AI证书, 职场人学AI, 人社部, AIGC, 人工智能训练师]
 source: https://v.douyin.com/OCjuNG9wjz0/
 date: 2026-06-03
 author: 宁说宁话
-related: [[MOC-AI学习路径]], [[AI Agent Skills 怎么管理]]
+related: [[MOC-AI学习路径]], [[抖音-AI不是变笨了，是你装的工具太吵 AI Agent Skills 怎么管理？当工具说明、触发条件和插件越来越多，AI 可能更容易选错，而不是变得更聪明。 #AI工具 #AIAgent #codex #Skills #Github-未知作者]]
 ---
 
 # 公司要求学AI，你也想考AI证书，给简历加分，到底考哪个？

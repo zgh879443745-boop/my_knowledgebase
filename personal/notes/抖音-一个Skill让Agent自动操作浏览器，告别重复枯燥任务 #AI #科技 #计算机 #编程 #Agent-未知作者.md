@@ -3,7 +3,7 @@ title: 一个Skill让Agent自动操作浏览器，告别重复枯燥任务 #AI #
 tags: [Agent, Skill, 浏览器自动化, EgoLight, WalkBody, Chrome]
 source: https://www.douyin.com/video/7665243075370945811
 date: 2026-07-28
-related: [[MOC-Agent]], [[MOC-浏览器自动化]], [[MOC-AI学习路径]], [[让Codex干活飞起]], [[AI Agent Skills 怎么管理]], [[firecrawl免API调用]], [[Pi Agent：比 Codex 更适合普通人的AI工具]]
+related: [[MOC-Agent]], [[MOC-浏览器自动化]], [[MOC-AI学习路径]], [[抖音-让Codex干活飞起-小韦用AI]], [[抖音-AI不是变笨了，是你装的工具太吵 AI Agent Skills 怎么管理？当工具说明、触发条件和插件越来越多，AI 可能更容易选错，而不是变得更聪明。 #AI工具 #AIAgent #codex #Skills #Github-未知作者]], [[抖音-firecrawl免API调用 让数据获取轻而易举 🔍API调用还在卡壳？现在firecrawl直接免Api直接调用，把数据喂到嘴边🚀零代码抓取，新手也能...-未知作者]], [[抖音-Pi Agent：比 Codex 更适合普通人的AI工具 #PiAgent#AI新星计划#抖音前沿科技首发计划#vibecoding大赏 #ClaudeCode-未知作者]]
 ---
 
 # 一个Skill让Agent自动操作浏览器，告别重复枯燥任务 #AI #科技 #计算机 #编程 #Agent

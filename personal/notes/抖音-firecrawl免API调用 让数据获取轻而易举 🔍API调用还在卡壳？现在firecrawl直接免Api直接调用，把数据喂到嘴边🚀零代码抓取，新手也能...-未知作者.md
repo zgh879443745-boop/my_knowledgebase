@@ -3,7 +3,7 @@ title: [[firecrawl]]免API调用 让数据获取轻而易举 🔍API调用还在
 tags: [firecrawl, 爬虫, 数据获取, Agent, Codex, ClaudeCode]
 source: https://www.douyin.com/video/7658567098902280369
 date: 2026-07-28
-related: [[MOC-Codex]], [[MOC-浏览器自动化]], [[让Codex干活飞起]], [[一个Skill让Agent自动操作浏览器]], [[LLM Wiki 和 GBrain 真正的差别]]
+related: [[MOC-Codex]], [[MOC-浏览器自动化]], [[抖音-让Codex干活飞起-小韦用AI]], [[抖音-一个Skill让Agent自动操作浏览器，告别重复枯燥任务 #AI #科技 #计算机 #编程 #Agent-未知作者]], [[抖音-LLM Wiki 和 GBrain 真正的差别-Frank的Agent实验室]]
 ---
 
 # [[firecrawl]]免API调用 让数据获取轻而易举 🔍API调用还在卡壳？现在[[firecrawl]]直接免Api直接调用，把数据喂到嘴边🚀零代码抓取，新手也能...
