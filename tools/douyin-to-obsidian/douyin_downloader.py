@@ -29,6 +29,7 @@ import json
 import argparse
 import tempfile
 import shutil
+import subprocess
 from pathlib import Path
 from typing import Optional
 from datetime import datetime
@@ -57,7 +58,8 @@ import requests
 import ffmpeg
 
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/121.0.2277.107 Version/17.0 Mobile/15E148 Safari/604.1'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36',
+    'Referer': 'https://www.douyin.com/',
 }
 
 DEFAULT_API_BASE_URL = "https://api.siliconflow.cn/v1/audio/transcriptions"
@@ -82,6 +84,7 @@ class DouyinProcessor:
             raise ValueError("未找到有效的分享链接")
 
         share_url = urls[0]
+        original_share_url = share_url
         share_response = requests.get(share_url, headers=HEADERS)
         video_id = share_response.url.split("?")[0].strip("/").split("/")[-1]
         share_url = f'https://www.iesdouyin.com/share/video/{video_id}'
@@ -96,20 +99,41 @@ class DouyinProcessor:
         find_res = pattern.search(response.text)
 
         if not find_res or not find_res.group(1):
-            raise ValueError("从HTML中解析视频信息失败")
+            return self._parse_with_ytdlp(original_share_url, video_id)
 
-        json_data = json.loads(find_res.group(1).strip())
-        VIDEO_ID_PAGE_KEY = "video_(id)/page"
-        NOTE_ID_PAGE_KEY = "note_(id)/page"
+        try:
+            json_data = json.loads(find_res.group(1).strip())
+        except json.JSONDecodeError as exc:
+            raise ValueError("抖音页面返回的路由数据不是有效 JSON，可能发生了页面结构变化") from exc
 
-        if VIDEO_ID_PAGE_KEY in json_data["loaderData"]:
-            original_video_info = json_data["loaderData"][VIDEO_ID_PAGE_KEY]["videoInfoRes"]
-        elif NOTE_ID_PAGE_KEY in json_data["loaderData"]:
-            original_video_info = json_data["loaderData"][NOTE_ID_PAGE_KEY]["videoInfoRes"]
-        else:
-            raise Exception("无法从JSON中解析视频或图集信息")
+        loader_data = json_data.get("loaderData")
+        if not isinstance(loader_data, dict):
+            raise ValueError("抖音页面缺少 loaderData，当前响应不是可解析的视频页面")
 
-        data = original_video_info["item_list"][0]
+        # 旧版页面把数据放在 videoInfoRes；新版页面可能保留页面节点，
+        # 但移除该字段。这里明确报告结构变化，避免直接抛出 KeyError，
+        # 也不尝试使用历史链接或本地缓存兜底。
+        page_keys = ("video_(id)/page", "note_(id)/page")
+        page_key = next((key for key in page_keys if key in loader_data), None)
+        if page_key is None:
+            raise ValueError(
+                "无法从抖音响应中定位视频/图集页面节点；"
+                f"当前 loaderData keys: {', '.join(map(str, loader_data.keys()))}"
+            )
+
+        page_data = loader_data[page_key]
+        if not isinstance(page_data, dict):
+            raise ValueError(f"抖音页面节点 {page_key} 不是对象，无法继续解析")
+
+        original_video_info = page_data.get("videoInfoRes")
+        if not isinstance(original_video_info, dict):
+            return self._parse_with_ytdlp(original_share_url, video_id)
+
+        item_list = original_video_info.get("item_list")
+        if not isinstance(item_list, list) or not item_list:
+            raise ValueError("videoInfoRes 中没有可用的 item_list，无法获取视频内容")
+
+        data = item_list[0]
 
         video_url = data["video"]["play_addr"]["url_list"][0].replace("playwm", "play")
         desc = data.get("desc", "").strip() or f"douyin_{video_id}"
@@ -121,6 +145,108 @@ class DouyinProcessor:
             "title": desc,
             "video_id": video_id
         }
+
+    def _parse_with_ytdlp(self, share_url: str, video_id: str) -> dict:
+        """解析新版抖音页面。
+
+        抖音新版页面不再把媒体地址放进 _ROUTER_DATA，改由 yt-dlp
+        使用当前会话解析。Cookie 只从用户显式提供的环境变量读取，
+        不读取项目缓存或历史链接。
+        """
+        try:
+            import yt_dlp
+        except ImportError as exc:
+            raise ValueError(
+                "抖音新版页面缺少 videoInfoRes，且当前 Python 环境未安装 yt-dlp。"
+                "请安装：py -3.10 -m pip install yt-dlp"
+            ) from exc
+
+        # 只有一条会话链路：持久化 Cookie（或显式指定的 Cookie）。
+        # Cookie 不可用时打开一次登录窗口，成功后覆盖保存并重试。
+        cookie_sources = []
+        try:
+            from douyin_favorites_knowledge.browser_collector import persistent_cookie_path
+
+            saved_cookie = persistent_cookie_path()
+            if saved_cookie.exists():
+                cookie_sources.append(("持久化 Cookie", {"cookiefile": str(saved_cookie)}))
+        except ImportError:
+            saved_cookie = None
+
+        cookie_file = os.environ.get("DOUYIN_COOKIES_FILE", "").strip()
+        if cookie_file and (not saved_cookie or Path(cookie_file).resolve() != saved_cookie):
+            cookie_sources = [("显式 Cookie", {"cookiefile": cookie_file})]
+
+        def extract(cookie_options):
+            options = {
+                "quiet": True,
+                "no_warnings": True,
+                "skip_download": True,
+                "noplaylist": True,
+                "http_headers": HEADERS,
+                **cookie_options,
+            }
+            with yt_dlp.YoutubeDL(options) as ydl:
+                return ydl.extract_info(share_url, download=False)
+
+        info = None
+        error = None
+        # 持久化浏览器会话是抖音当前实际认可的会话来源；优先复用它，
+        # 避免先触发 yt-dlp 的 403 后又误开一个新的登录窗口。
+        if cookie_sources:
+            try:
+                from douyin_favorites_knowledge.browser_collector import fetch_video_detail
+
+                detail = fetch_video_detail(video_id=video_id)
+                urls = detail.get("video", {}).get("play_addr", {}).get("url_list") or []
+                video_url = next((item for item in urls if item), None)
+                if video_url:
+                    video_url = video_url.replace("playwm", "play")
+                    title = (detail.get("desc") or f"douyin_{video_id}").strip()
+                    title = re.sub(r'[\\/:*?"<>|]', '_', title)
+                    return {"url": video_url, "title": title, "video_id": video_id}
+            except Exception as exc:
+                error = exc
+
+        if cookie_sources:
+            try:
+                info = extract(cookie_sources[0][1])
+            except Exception as exc:
+                error = exc
+
+        # 没有 Cookie，或已有 Cookie 失效：只弹一次窗口，最多等待 5 分钟。
+        if info is None:
+            # yt-dlp 近期对抖音详情接口可能被 403，即使 Cookie 在浏览器内仍然有效。
+            # 先复用同一持久化浏览器会话请求详情，避免错误地再次弹出登录窗口。
+            try:
+                from douyin_favorites_knowledge.browser_collector import login_and_persist_cookie_file
+
+                refreshed = login_and_persist_cookie_file(
+                    timeout_seconds=300
+                )
+                info = extract({"cookiefile": str(refreshed)})
+            except (ImportError, ValueError) as exc:
+                error = exc
+            except Exception as exc:
+                error = exc
+
+        if info is None:
+            detail = str(error or "未知错误").strip()
+            raise ValueError(
+                "分享链接已获取，但视频解析需要有效 Cookie；"
+                f"登录窗口最多等待 5 分钟，登录后仍解析失败：{detail}"
+            ) from error
+
+        video_url = info.get("url")
+        if not video_url:
+            formats = info.get("formats") or []
+            video_url = next((item.get("url") for item in reversed(formats) if item.get("url")), None)
+        if not video_url:
+            raise ValueError("yt-dlp 已解析页面，但未返回可下载的视频地址")
+
+        title = (info.get("title") or info.get("description") or f"douyin_{video_id}").strip()
+        title = re.sub(r'[\\/:*?"<>|]', '_', title)
+        return {"url": video_url, "title": title, "video_id": video_id}
 
     def download_video(self, video_info: dict, output_dir: Optional[Path] = None, show_progress: bool = True) -> Path:
         if output_dir is None:
@@ -392,10 +518,27 @@ def main():
     parser.add_argument("--api-key", "-k", help="硅基流动 API 密钥 (也可通过 DOUYIN_API_KEY 环境变量设置)")
     parser.add_argument("--save-video", "-v", action="store_true", help="提取文案时同时保存视频")
     parser.add_argument("--quiet", "-q", action="store_true", help="安静模式，减少输出")
+    parser.add_argument(
+        "--interactive-login",
+        action="store_true",
+        help="解析需要登录时打开可见抖音窗口，等待用户登录并自动使用一次性会话",
+    )
+    parser.add_argument("--login-timeout", type=int, default=300, help="等待登录的秒数")
 
     args = parser.parse_args()
 
+    temporary_cookie_file = None
     try:
+        if args.interactive_login and not os.environ.get("DOUYIN_COOKIES_FILE", "").strip():
+            try:
+                from douyin_favorites_knowledge.browser_collector import login_and_export_cookie_file
+            except ImportError as exc:
+                raise ValueError(
+                    "自动登录组件未安装，请先安装 tools/douyin-favorites-to-knowledge 的依赖"
+                ) from exc
+            temporary_cookie_file = login_and_export_cookie_file(timeout_seconds=args.login_timeout)
+            os.environ["DOUYIN_COOKIES_FILE"] = str(temporary_cookie_file)
+
         if args.action == "info":
             info = get_video_info(args.link)
             print("\n" + "=" * 50)
@@ -435,6 +578,9 @@ def main():
     except Exception as e:
         print(f"\n错误: {e}", file=sys.stderr)
         sys.exit(1)
+    finally:
+        if temporary_cookie_file and temporary_cookie_file.exists():
+            temporary_cookie_file.unlink()
 
 
 if __name__ == "__main__":
